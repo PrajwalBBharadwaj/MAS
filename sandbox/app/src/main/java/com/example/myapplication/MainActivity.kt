@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Surface(color = Color.Cyan, modifier = modifier
+    Surface(color = Color.Cyan, modifier = modifier, shape = MaterialTheme.shapes.medium
     ) {
         Text(
             text = "Hello, my name is $name!",
@@ -41,10 +41,10 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true, name = "Light Mode", showSystemUi = true)
+@Preview(showBackground = true, name = "Light Mode", showSystemUi = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_NO)
 @Composable
 fun GreetingPreview() {
     MyApplicationTheme {
-        Greeting("Shreyas")
+        Greeting("Shreyas, from Preview")
     }
 }
