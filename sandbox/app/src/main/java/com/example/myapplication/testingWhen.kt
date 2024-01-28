@@ -1,5 +1,10 @@
 package com.example.myapplication
 
+//write a function which adds two numbers
+fun addTwoNumbers(a: Int, b: Int): Int {
+    return a + b
+}
+
 fun main() {
     // get input from terminal
     val input : Int = 6
@@ -36,4 +41,6 @@ fun main() {
     val lengthOfFoo = fooName?.length ?: -1
     println(lengthOfFoo)
     val lengthOfFoo2 = if (fooName != null) fooName.length else -1
+
+    println(addTwoNumbers(10, 2))
 }
