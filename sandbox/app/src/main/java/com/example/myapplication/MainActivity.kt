@@ -17,6 +17,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.ui.text.style.TextAlign
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,21 +37,27 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, from: String, modifier: Modifier = Modifier) {
-    Surface(color = Color.Cyan, modifier = modifier, shape = MaterialTheme.shapes.medium
-    ) {
+    Column (
+        modifier = modifier.padding(24.dp),
+        verticalArrangement = Arrangement.Center,
+    ){
         Text(
             text = "Hello, my name is $name!",
-            fontSize = 100.sp,
+            fontSize = 50.sp,
             // full size
             lineHeight = 116.sp,
-            modifier = modifier.padding(50.dp)
+            modifier = modifier.padding(50.dp).align(alignment = androidx.compose.ui.Alignment.End),
         )
     }
-    Row {
+    Row (
+        // place at the very bottom
+        horizontalArrangement = Arrangement.SpaceEvenly,
+    ){
         Text(
             text = "I am from $from!",
             fontSize = 36.sp,
-            modifier = modifier.padding(24.dp)
+            modifier = modifier.padding(24.dp).align(alignment = androidx.compose.ui.Alignment.Bottom),
+            textAlign = TextAlign.Center
         )
     }
 }
