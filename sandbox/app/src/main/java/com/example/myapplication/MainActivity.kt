@@ -1,8 +1,10 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.os.Message
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.fillMaxSize
@@ -19,6 +21,8 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 
 class MainActivity : ComponentActivity() {
@@ -36,36 +40,51 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
+fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) {
+    val image = painterResource(id = R.drawable.androidparty);
+    Box {
+        Image(
+            painter = image,
+            contentDescription = "Android Party",
+            contentScale = androidx.compose.ui.layout.ContentScale.Crop,
+            alpha = 0.5f,
+        )
+        Greeting(
+            name = message,
+            from = from,
+            modifier = Modifier.
+                    fillMaxSize().
+                    padding(24.dp))
+    }
+}
+
+@Composable
 fun Greeting(name: String, from: String, modifier: Modifier = Modifier) {
     Column (
-        modifier = modifier.padding(24.dp),
+        modifier = modifier,
         verticalArrangement = Arrangement.Center,
     ){
         Text(
             text = "Hello, my name is $name!",
-            fontSize = 50.sp,
+            fontSize = 25.sp,
             // full size
             lineHeight = 116.sp,
-            modifier = modifier.padding(50.dp).align(alignment = androidx.compose.ui.Alignment.End),
+            textAlign = TextAlign.Center,
         )
-    }
-    Row (
-        // place at the very bottom
-        horizontalArrangement = Arrangement.SpaceEvenly,
-    ){
         Text(
             text = "I am from $from!",
-            fontSize = 36.sp,
-            modifier = modifier.padding(24.dp).align(alignment = androidx.compose.ui.Alignment.Bottom),
-            textAlign = TextAlign.Center
+            fontSize = 25.sp,
+            modifier = Modifier.padding(16.dp).align(alignment = Alignment.End),
         )
     }
+
 }
 
 @Preview(showBackground = true, name = "Light Mode", showSystemUi = true, uiMode = android.content.res.Configuration.UI_MODE_NIGHT_NO)
 @Composable
 fun GreetingPreview() {
     MyApplicationTheme {
-        Greeting(name = "Shreyas", from = "Preview")
+//        Greeting(name = "Shreyas", from = "Preview");
+        GreetingImage(message = "Shreyas", from = "Preview", modifier = Modifier.padding(24.dp))
     }
 }
