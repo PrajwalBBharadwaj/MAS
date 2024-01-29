@@ -1,9 +1,21 @@
 package com.example.myapplication
 
-//write a function which adds two numbers
+class Question<T>(
+    val questionText: String,
+    val answer: T,
+    val difficulty: Difficulty
+)
+
+enum class Difficulty {
+    EASY, MEDIUM, HARD
+}
+
+
 fun addTwoNumbers(a: Int, b: Int): Int {
     return a + b
 }
+
+
 
 fun main() {
     // get input from terminal
@@ -43,4 +55,14 @@ fun main() {
     val lengthOfFoo2 = if (fooName != null) fooName.length else -1
 
     println(addTwoNumbers(10, 2))
+
+    val question1 = Question<String>("Quoth the raven ___", "nevermore", Difficulty.MEDIUM)
+    val question2 = Question<Boolean>("The sky is green. True or false", false, Difficulty.EASY)
+    val question3 = Question<Int>("How many days are there between full moons?", 28, Difficulty.HARD)
+
+    val questions = setOf(question1, question2, question3)
+    for (question in questions) {
+        println(question.questionText + " " + question.answer + " " + question.difficulty)
+    }
+
 }
