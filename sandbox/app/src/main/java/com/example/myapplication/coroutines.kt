@@ -35,13 +35,27 @@ suspend fun addTimes() : String {
 }
 
 fun main() {
-    val totalTime = measureTimeMillis {
-        runBlocking {
-            println("Main program starts: ${Thread.currentThread().name}")
-            val time = addTimes()
-            println(time)
-            println("Main program continues: ${Thread.currentThread().name}")
+//    val totalTime = measureTimeMillis {
+//        runBlocking {
+//            println("Main program starts: ${Thread.currentThread().name}")
+//            val time = addTimes()
+//            println(time)
+//            println("Main program continues: ${Thread.currentThread().name}")
+//        }
+//    }
+//    println("Total time: $totalTime")
+
+    runBlocking {
+        launch {
+            withContext(Dispatchers.Default) {
+                repeat(10) {
+                    println("I'm sleeping $it ...")
+                    delay(500L)
+                }
+            }
+            delay(1000)
+            println("10 results found.")
         }
+        println("Loading...")
     }
-    println("Total time: $totalTime")
 }
