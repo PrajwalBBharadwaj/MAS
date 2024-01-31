@@ -20,6 +20,7 @@ import com.notes.app.screens.sign_in.SignInScreen
 import com.notes.app.screens.sign_up.SignUpScreen
 import com.notes.app.screens.splash.SplashScreen
 import com.notes.app.ui.theme.NotesTheme
+import com.google.firebase.FirebaseApp
 
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)

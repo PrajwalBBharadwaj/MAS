@@ -1,0 +1,10 @@
+#Tue Jan 30 21:46:37 EST 2024
+base.0=/home/enryu/github_stuff/gatech/gitstuff/spring24/CS8803_MAS/MAS/Notes/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+base.1=/home/enryu/github_stuff/gatech/gitstuff/spring24/CS8803_MAS/MAS/Notes/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.2=/home/enryu/github_stuff/gatech/gitstuff/spring24/CS8803_MAS/MAS/Notes/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/3/classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=3/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
