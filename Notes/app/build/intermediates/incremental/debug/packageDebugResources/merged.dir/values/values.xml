@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Notes</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="delete_account">Delete account</string>
+    <string name="delete_account_description">You will lose all your notes and your account will be deleted. This action is irreversible.</string>
+    <string name="delete_account_title">Delete account?</string>
+    <string name="email">Email</string>
+    <string name="gcm_defaultSenderId" translatable="false">836971332019</string>
+    <string name="google_api_key" translatable="false">AIzaSyAJpq3Y2X87uZkucAIhed7n6rjBbR4Lc2c</string>
+    <string name="google_app_id" translatable="false">1:836971332019:android:877a59f0a5198fb94e4bc6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAJpq3Y2X87uZkucAIhed7n6rjBbR4Lc2c</string>
+    <string name="google_storage_bucket" translatable="false">loggingproject-ffc28.appspot.com</string>
+    <string name="password">Password</string>
+    <string name="project_id" translatable="false">loggingproject-ffc28</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sign_out_description">You will have to sign in again to see your notes.</string>
+    <string name="sign_out_title">Sign out?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_description">Don\'t have an account? Click here to Sign Up!</string>
+    <style name="Theme.Notes" parent="android:Theme.Material.Light.NoActionBar"/>
+</resources>
