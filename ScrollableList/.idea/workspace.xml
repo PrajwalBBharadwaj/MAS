@@ -9,7 +9,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79a5c3de-0443-45b4-b125-878cf702ad03" name="Changes" comment="" />
+    <list default="true" id="79a5c3de-0443-45b4-b125-878cf702ad03" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../GreetingCard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GreetingCard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RaceTracker/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RaceTracker/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RaceTracker/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RaceTracker/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RaceTracker/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RaceTracker/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TipTime/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TipTime/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lemonade_app/app/src/main/java/com/example/lemonade/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../lemonade_app/app/src/main/java/com/example/lemonade/MainActivity.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +27,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[071ffd75]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/home/prajwal/.android/avd/Android_Virtual_Device.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -50,7 +59,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/enryu/github_stuff/gatech/gitstuff/spring24/CS8803_MAS/MAS/TipTime"
+    "last_opened_file_path": "/home/prajwal/Documents/GaTech_4th_Sem/MAS/MAS_Github_branch/MAS/TipTime"
   }
 }]]></component>
   <component name="RunManager" selected="Compose Preview.AffirmationsAppPreview">
